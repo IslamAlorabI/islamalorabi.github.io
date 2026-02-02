@@ -1,47 +1,236 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Islam AlorabI</title>
+  <meta name="description" content="Islam AlorabI - Android Developer, macOS Developer & Linux Enthusiast. Creator of ShafeeZekr and Salat Times apps.">
+  <meta name="keywords" content="Islam AlorabI, Android Developer, macOS Developer, ShafeeZekr, Salat Times, Prayer Times">
+  <meta name="author" content="Islam AlorabI">
+  <meta property="og:title" content="Islam AlorabI | Portfolio">
+  <meta property="og:description" content="Android Developer, macOS Developer & Linux Enthusiast">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://islamalorabi.github.io">
+  <title>Islam AlorabI | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>👨‍💻 Islam AlorabI</h1>
-      <p class="subtitle">Programmer & Linux Enthusiast</p>
-    </header>
+  <nav>
+    <div class="container">
+      <a href="#" class="nav-logo">
+        <span>Islam</span> AlorabI
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#apps">Apps</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          🌙
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </nav>
 
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I’m a passionate programmer who loves working with Android, Linux, and open-source technologies. 
-        I enjoy building tools and automations that make life easier.
+  <section class="hero">
+    <div class="hero-content fade-in">
+      <h1>Hi, I'm <span>Islam AlorabI</span></h1>
+      <p class="hero-subtitle">
+        Android Developer • macOS Developer • Linux Enthusiast
+        <br>Building apps that make a difference
       </p>
-    </section>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">
+          View My Work →
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          Get In Touch
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <section>
-      <h2>Projects</h2>
-      <ul class="projects">
-        <li><a href="https://github.com/IslamAlorabI/QuranWeb">📘 QuranWeb</a></li>
-        <li><a href="https://github.com/IslamAlorabI/Telegram-Prayer-Times-Bot">🕌 Prayer Times Bot</a></li>
-        <li><a href="https://github.com/IslamAlorabI">🔧 View All on GitHub</a></li>
-      </ul>
-    </section>
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <p>Passionate about creating meaningful applications</p>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I'm a passionate developer specializing in Android and macOS applications. 
+            I love working with Linux, open-source technologies, and building tools 
+            that make life easier for users around the world.
+          </p>
+          <p>
+            My focus is on creating clean, efficient, and user-friendly applications 
+            that solve real problems. I'm particularly interested in Islamic apps 
+            that help Muslims in their daily worship and spiritual journey.
+          </p>
+          <div class="skills">
+            <span class="skill-tag">🤖 Android</span>
+            <span class="skill-tag">🍎 Swift/SwiftUI</span>
+            <span class="skill-tag">🐧 Linux</span>
+            <span class="skill-tag">🐍 Python</span>
+            <span class="skill-tag">🎨 Kotlin</span>
+            <span class="skill-tag">🌐 Web Development</span>
+            <span class="skill-tag">🤖 Telegram Bots</span>
+            <span class="skill-tag">📱 Mobile Apps</span>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="about-card">
+            <div class="avatar">👨‍💻</div>
+            <h3>Islam AlorabI</h3>
+            <p>Developer & Creator</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section>
-      <h2>Contact</h2>
-      <ul class="contact">
-        <li>📧 islam@example.com</li>
-        <li><a href="https://github.com/IslamAlorabI">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/islamalorabi/">LinkedIn</a></li>
-      </ul>
-    </section>
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2>Projects</h2>
+        <p>Some of my open-source work</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-icon">📖</div>
+          <h3>QuranWeb</h3>
+          <p>
+            A beautiful web application for reading and exploring the Holy Quran 
+            with a clean and intuitive interface.
+          </p>
+          <div class="project-tags">
+            <span>Web</span>
+            <span>JavaScript</span>
+            <span>HTML/CSS</span>
+          </div>
+          <a href="https://github.com/IslamAlorabI/QuranWeb" class="project-link" target="_blank" rel="noopener">
+            View on GitHub →
+          </a>
+        </div>
+        <div class="project-card">
+          <div class="project-icon">🕌</div>
+          <h3>Prayer Times Bot</h3>
+          <p>
+            A Telegram bot that provides accurate Islamic prayer times 
+            for any location around the world.
+          </p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Telegram API</span>
+            <span>Bot</span>
+          </div>
+          <a href="https://github.com/IslamAlorabI/Telegram-Prayer-Times-Bot" class="project-link" target="_blank" rel="noopener">
+            View on GitHub →
+          </a>
+        </div>
+        <div class="project-card">
+          <div class="project-icon">🔧</div>
+          <h3>More Projects</h3>
+          <p>
+            Explore all my open-source projects, contributions, and experiments 
+            on my GitHub profile.
+          </p>
+          <div class="project-tags">
+            <span>Open Source</span>
+            <span>Various</span>
+          </div>
+          <a href="https://github.com/IslamAlorabI" class="project-link" target="_blank" rel="noopener">
+            View GitHub Profile →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-      <p>&copy; 2025 Islam AlorabI</p>
-    </footer>
-  </div>
+  <section id="apps">
+    <div class="container">
+      <div class="section-header">
+        <h2>My Apps</h2>
+        <p>Applications available for download</p>
+      </div>
+      <div class="apps-grid">
+        <div class="app-card">
+          <div class="app-header">
+            <div class="app-icon">📿</div>
+            <div class="app-info">
+              <h3>ShafeeZekr</h3>
+              <p class="app-platform">Android</p>
+              <p>
+                An Islamic Dhikr reminder app that helps Muslims maintain their daily 
+                remembrance of Allah with customizable reminders and beautiful interface.
+              </p>
+            </div>
+          </div>
+          <div class="app-footer">
+            <a href="https://play.google.com/store/apps/details?id=islamalorabi.shafeezekr.pbuh" class="store-btn play-store" target="_blank" rel="noopener">
+              ▶️ Get on Play Store
+            </a>
+          </div>
+        </div>
+        <div class="app-card">
+          <div class="app-header">
+            <div class="app-icon">🕋</div>
+            <div class="app-info">
+              <h3>Salat Times</h3>
+              <p class="app-platform">macOS</p>
+              <p>
+                A lightweight and elegant Prayer Times app for macOS, built natively 
+                using Swift and SwiftUI for a smooth macOS experience.
+              </p>
+            </div>
+          </div>
+          <div class="app-footer">
+            <a href="https://github.com/IslamAlorabI/Salat-Times" class="store-btn github" target="_blank" rel="noopener">
+              ⬇️ Download from GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p>Let's connect and build something great together</p>
+      </div>
+      <div class="contact-content">
+        <p class="contact-email">
+          📧 <a href="mailto:islamalorabi04@gmail.com">islamalorabi04@gmail.com</a>
+        </p>
+        <div class="social-links">
+          <a href="https://github.com/IslamAlorabI" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+            💻
+          </a>
+          <a href="https://www.linkedin.com/in/islamalorabi/" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+            💼
+          </a>
+          <a href="mailto:islamalorabi04@gmail.com" class="social-link" aria-label="Email">
+            ✉️
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Islam AlorabI. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
