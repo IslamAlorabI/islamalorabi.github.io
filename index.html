@@ -27,11 +27,14 @@
         <span class="logo-text"><span>Islam</span> AlorabI</span>
       </a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#apps">Apps</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#apps" data-i18n="nav.apps">Apps</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
       <div style="display: flex; align-items: center; gap: 12px;">
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+          عربي
+        </button>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
           🌙
         </button>
@@ -44,16 +47,16 @@
 
   <section class="hero">
     <div class="hero-content fade-in">
-      <h1>Hi, I'm <span>Islam AlorabI</span></h1>
+      <h1><span data-i18n="hero.greeting">Hi, I'm</span> <span>Islam AlorabI</span></h1>
       <p class="hero-subtitle">
-        Android Developer • macOS Developer • Linux Enthusiast
-        <br>Building apps that make a difference
+        <span data-i18n="hero.subtitle">Android Developer • macOS Developer • Linux Enthusiast</span>
+        <br><span data-i18n="hero.tagline">Building apps that make a difference</span>
       </p>
       <div class="hero-buttons">
-        <a href="#projects" class="btn btn-primary">
-          View My Work →
+        <a href="#apps" class="btn btn-primary">
+          <span data-i18n="hero.cta.work">View My Work</span> →
         </a>
-        <a href="#contact" class="btn btn-secondary">
+        <a href="#contact" class="btn btn-secondary" data-i18n="hero.cta.contact">
           Get In Touch
         </a>
       </div>
@@ -63,37 +66,37 @@
   <section id="about">
     <div class="container">
       <div class="section-header">
-        <h2>About Me</h2>
-        <p>Passionate about creating meaningful applications</p>
+        <h2 data-i18n="about.title">About Me</h2>
+        <p data-i18n="about.subtitle">Passionate about creating meaningful applications</p>
       </div>
       <div class="about-content">
         <div class="about-text">
-          <p>
+          <p data-i18n="about.p1">
             I'm a passionate developer specializing in Android and macOS applications.
             I love working with Linux, open-source technologies, and building tools
             that make life easier for users around the world.
           </p>
-          <p>
+          <p data-i18n="about.p2">
             My focus is on creating clean, efficient, and user-friendly applications
             that solve real problems. I'm particularly interested in Islamic apps
             that help Muslims in their daily worship and spiritual journey.
           </p>
           <div class="skills">
-            <span class="skill-tag">🤖 Android</span>
-            <span class="skill-tag">🍎 Swift/SwiftUI</span>
-            <span class="skill-tag">🐧 Linux</span>
-            <span class="skill-tag">🐍 Python</span>
-            <span class="skill-tag">🎨 Kotlin</span>
-            <span class="skill-tag">🌐 Web Development</span>
-            <span class="skill-tag">🤖 Telegram Bots</span>
-            <span class="skill-tag">📱 Mobile Apps</span>
+            <span class="skill-tag"><span>🤖</span> <span data-i18n="skills.android">Android</span></span>
+            <span class="skill-tag"><span>🍎</span> <span data-i18n="skills.swift">Swift/SwiftUI</span></span>
+            <span class="skill-tag"><span>🐧</span> <span data-i18n="skills.linux">Linux</span></span>
+            <span class="skill-tag"><span>🐍</span> <span data-i18n="skills.python">Python</span></span>
+            <span class="skill-tag"><span>🎨</span> <span data-i18n="skills.kotlin">Kotlin</span></span>
+            <span class="skill-tag"><span>🌐</span> <span data-i18n="skills.web">Web Development</span></span>
+            <span class="skill-tag"><span>🤖</span> <span data-i18n="skills.telegram">Telegram Bots</span></span>
+            <span class="skill-tag"><span>📱</span> <span data-i18n="skills.mobile">Mobile Apps</span></span>
           </div>
         </div>
         <div class="about-visual">
           <div class="about-card">
             <div class="avatar">👨‍💻</div>
             <h3>Islam AlorabI</h3>
-            <p>Developer & Creator</p>
+            <p data-i18n="about.role">Developer & Creator</p>
           </div>
         </div>
       </div>
@@ -103,17 +106,17 @@
   <section id="apps">
     <div class="container">
       <div class="section-header">
-        <h2>My Apps</h2>
-        <p>Applications available for download</p>
+        <h2 data-i18n="apps.title">My Apps</h2>
+        <p data-i18n="apps.subtitle">Applications available for download</p>
       </div>
       <div class="apps-grid">
         <div class="app-card">
           <div class="app-header">
             <div class="app-icon">📿</div>
             <div class="app-info">
-              <h3>ShafeeZekr</h3>
+              <h3 data-i18n="apps.shafeezekr.name">ShafeeZekr</h3>
               <p class="app-platform">Android</p>
-              <p>
+              <p data-i18n="apps.shafeezekr.desc">
                 An Islamic Dhikr reminder app that helps Muslims maintain their daily
                 remembrance of Allah with customizable reminders and beautiful interface.
               </p>
@@ -122,7 +125,7 @@
           <div class="app-footer">
             <a href="https://play.google.com/store/apps/details?id=islamalorabi.shafeezekr.pbuh"
               class="store-btn play-store" target="_blank" rel="noopener">
-              ▶️ Get on Play Store
+              ▶️ <span data-i18n="apps.playstore">Get on Play Store</span>
             </a>
           </div>
         </div>
@@ -130,9 +133,9 @@
           <div class="app-header">
             <div class="app-icon">🕋</div>
             <div class="app-info">
-              <h3>Salat Times</h3>
+              <h3 data-i18n="apps.salattimes.name">Salat Times</h3>
               <p class="app-platform">macOS</p>
-              <p>
+              <p data-i18n="apps.salattimes.desc">
                 A lightweight and elegant Prayer Times app for macOS, built natively
                 using Swift and SwiftUI for a smooth macOS experience.
               </p>
@@ -141,7 +144,7 @@
           <div class="app-footer">
             <a href="https://github.com/IslamAlorabI/Salat-Times" class="store-btn github" target="_blank"
               rel="noopener">
-              ⬇️ Download from GitHub
+              ⬇️ <span data-i18n="apps.github">Download from GitHub</span>
             </a>
           </div>
         </div>
@@ -152,8 +155,8 @@
   <section id="contact">
     <div class="container">
       <div class="section-header">
-        <h2>Get In Touch</h2>
-        <p>Let's connect and build something great together</p>
+        <h2 data-i18n="contact.title">Get In Touch</h2>
+        <p data-i18n="contact.subtitle">Let's connect and build something great together</p>
       </div>
       <div class="contact-content">
         <p class="contact-email">
@@ -178,7 +181,7 @@
 
   <footer>
     <div class="container">
-      <p>© 2025 Islam AlorabI. All rights reserved.</p>
+      <p data-i18n="footer.copyright">© 2025 Islam AlorabI. All rights reserved.</p>
     </div>
   </footer>
 

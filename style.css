@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Google+Sans+Text:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
 
 :root {
   --bg-primary: #050508;
@@ -214,6 +215,31 @@ nav .container {
   border-color: var(--blue-primary);
   box-shadow: var(--shadow-glow);
   transform: rotate(15deg) scale(1.1);
+}
+
+.lang-toggle {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--border-radius-sm);
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-family: 'IBM Plex Sans Arabic', 'Google Sans Text', sans-serif;
+}
+
+.lang-toggle:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--blue-primary);
+  box-shadow: var(--shadow-glow);
+  transform: scale(1.05);
 }
 
 .mobile-menu-btn {
@@ -920,5 +946,93 @@ footer p {
 
   section {
     padding: 80px 0;
+  }
+}
+
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] body {
+  font-family: 'IBM Plex Sans Arabic', 'Google Sans Text', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+[dir="rtl"] .nav-logo {
+  font-family: 'IBM Plex Sans Arabic', 'Google Sans', sans-serif;
+}
+
+[dir="rtl"] .nav-links {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-links a::after {
+  left: auto;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+[dir="rtl"] .hero-content {
+  text-align: center;
+}
+
+[dir="rtl"] .hero h1 span::after {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .btn {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .about-content {
+  direction: rtl;
+}
+
+[dir="rtl"] .about-text {
+  text-align: right;
+}
+
+[dir="rtl"] .skills {
+  justify-content: flex-start;
+}
+
+[dir="rtl"] .skill-tag {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .app-header {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .app-info {
+  text-align: right;
+}
+
+[dir="rtl"] .store-btn {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .social-links {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .contact-email {
+  direction: ltr;
+}
+
+[dir="rtl"] footer p {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  [dir="rtl"] .app-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  [dir="rtl"] .app-info {
+    text-align: center;
   }
 }
