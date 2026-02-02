@@ -1,6 +1,6 @@
 # Islam AlorabI - Portfolio Website
 
-Personal portfolio website showcasing my projects and applications.
+Personal portfolio website showcasing my applications.
 
 **Live Site:** [islamalorabi.github.io](https://islamalorabi.github.io)
 
@@ -15,8 +15,7 @@ Personal portfolio website showcasing my projects and applications.
 
 - **Hero** - Introduction and call-to-action
 - **About** - Bio and skills/technologies
-- **Projects** - Open-source work (QuranWeb, Prayer Times Bot)
-- **Apps** - Published applications (ShafeeZekr, Salat Times)
+- **Apps** - Published applications
 - **Contact** - Email and social links
 
 ## Apps
@@ -32,19 +31,6 @@ Personal portfolio website showcasing my projects and applications.
 - CSS3 (CSS Variables, Flexbox, Grid)
 - Vanilla JavaScript
 - GitHub Pages
-
-## Local Development
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/IslamAlorabI/islamalorabi.github.io.git
-   ```
-
-2. Open `index.html` in your browser
-
-## License
-
-MIT License
 
 ## Contact
 
