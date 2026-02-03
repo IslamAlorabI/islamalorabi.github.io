@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'apps.github': 'تحميل من GitHub',
             'contact.title': 'تواصل معي',
             'contact.subtitle': 'لنتواصل ونبني شيئاً رائعاً معاً',
-            'footer.copyright': '© 2025 Islam AlorabI. جميع الحقوق محفوظة.'
+            'footer.copyright': '© 2025 إسلام العرابي. جميع الحقوق محفوظة.'
         }
     };
 

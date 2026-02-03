@@ -842,11 +842,6 @@ section {
   z-index: 1;
 }
 
-.contact-email {
-  font-size: clamp(1.3rem, 4vw, 1.6rem);
-  margin-bottom: 40px;
-}
-
 .contact-email a {
   color: var(--blue-light);
   position: relative;
@@ -889,6 +884,27 @@ section {
   font-size: 1.6rem;
   color: var(--text-secondary);
   transition: var(--transition);
+}
+
+.social-link svg {
+  width: 28px;
+  height: 28px;
+  fill: currentColor;
+}
+
+.contact-email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: clamp(1.3rem, 4vw, 1.6rem);
+  margin-bottom: 40px;
+}
+
+.contact-icon {
+  width: 28px;
+  height: 28px;
+  fill: var(--blue-light);
 }
 
 .social-link:hover {
