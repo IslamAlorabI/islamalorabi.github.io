@@ -31,15 +31,19 @@ document.addEventListener('DOMContentLoaded', () => {
             'skills.mobile': 'Mobile Apps',
             'apps.title': 'My Apps',
             'apps.subtitle': 'Applications available for download',
-            'apps.shafeezekr.name': 'ShafeeZekr (Praising the Intercessor)',
-            'apps.shafeezekr.desc': 'An Islamic Dhikr reminder app that helps Muslims maintain their daily remembrance of Allah with customizable reminders and beautiful interface.',
+            'apps.shafeezekr.name': 'ShafeeZekr',
+            'apps.shafeezekr.desc': 'ShafeeZekr (Praising the Intercessor) An Islamic Dhikr reminder app that helps Muslims maintain their daily remembrance of Allah with customizable reminders and beautiful interface.',
             'apps.salattimes.name': 'Salat Times',
             'apps.salattimes.desc': 'A lightweight and elegant Prayer Times app for macOS, built natively using Swift and SwiftUI for a smooth macOS experience.',
             'apps.playstore': 'Get on Play Store',
             'apps.github': 'Download from GitHub',
             'contact.title': 'Get In Touch',
             'contact.subtitle': "Let's connect and build something great together",
-            'footer.copyright': '© 2025 Islam AlorabI. All rights reserved.'
+            'footer.copyright': '© 2025 Islam AlorabI. All rights reserved.',
+            'name': 'Islam',
+            'name.last': 'AlorabI',
+            'hero.name': 'Islam AlorabI',
+            'about.name': 'Islam AlorabI'
         },
         ar: {
             'nav.about': 'نبذة عني',
@@ -73,7 +77,11 @@ document.addEventListener('DOMContentLoaded', () => {
             'apps.github': 'تحميل من GitHub',
             'contact.title': 'تواصل معي',
             'contact.subtitle': 'لنتواصل ونبني شيئاً رائعاً معاً',
-            'footer.copyright': '© 2025 إسلام العرابي. جميع الحقوق محفوظة.'
+            'footer.copyright': '© 2025 إسلام العرابي. جميع الحقوق محفوظة.',
+            'name': 'إسلام',
+            'name.last': 'العرابي',
+            'hero.name': 'إسلام العرابي',
+            'about.name': 'إسلام العرابي'
         }
     };
 

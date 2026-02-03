@@ -892,13 +892,19 @@ section {
   fill: currentColor;
 }
 
+.contact-emails {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
 .contact-email {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
-  font-size: clamp(1.3rem, 4vw, 1.6rem);
-  margin-bottom: 40px;
+  font-size: clamp(1.1rem, 3vw, 1.4rem);
 }
 
 .contact-icon {
