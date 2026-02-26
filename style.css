@@ -14,6 +14,7 @@
   --blue-dark: #2563eb;
   --blue-glow: rgba(59, 130, 246, 0.5);
   --blue-glow-intense: rgba(59, 130, 246, 0.7);
+  --accent-color: #3b82f6;
   --gradient-blue: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
   --gradient-blue-glow: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
   --glass-bg: rgba(18, 18, 28, 0.6);
@@ -150,11 +151,17 @@ nav .container {
   letter-spacing: -1px;
 }
 
-.nav-logo .logo-text span {
+.nav-logo .logo-text .accent-text {
   background: var(--gradient-blue);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.nav-logo .logo-text span:not(.accent-text) {
+  color: var(--text-primary);
+  background: none;
+  -webkit-text-fill-color: initial;
 }
 
 .nav-links {
@@ -332,7 +339,7 @@ nav .container {
   letter-spacing: -0.02em;
 }
 
-.hero h1 span {
+.hero h1 .accent-text {
   background: var(--gradient-blue-glow);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -340,7 +347,7 @@ nav .container {
   position: relative;
 }
 
-.hero h1 span::after {
+.hero h1 .accent-text::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -350,6 +357,11 @@ nav .container {
   background: var(--gradient-blue);
   border-radius: 4px;
   box-shadow: 0 0 20px var(--blue-glow-intense);
+}
+
+.hero h1 span:not(.accent-text) {
+  background: none;
+  -webkit-text-fill-color: initial;
 }
 
 .hero-subtitle {

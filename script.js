@@ -43,7 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
             'name': 'Islam',
             'name.last': 'AlorabI',
             'hero.name': 'Islam AlorabI',
-            'about.name': 'Islam AlorabI'
+            'about.name': 'Islam AlorabI',
+            'apps.alminshawi.name': 'Al-Minshawi المنشاوي',
+            'apps.alminshawi.desc': 'A beautiful Quran recitation app featuring Sheikh Mohamed Siddiq El-Minshawi, with high-quality audio and offline support.',
+            'apps.privacypolicy': 'Privacy Policy'
         },
         ar: {
             'nav.about': 'نبذة عني',
@@ -81,7 +84,10 @@ document.addEventListener('DOMContentLoaded', () => {
             'name': 'إسلام',
             'name.last': 'العرابي',
             'hero.name': 'إسلام العرابي',
-            'about.name': 'إسلام العرابي'
+            'about.name': 'إسلام العرابي',
+            'apps.alminshawi.name': 'المنشاوي Al-Minshawi',
+            'apps.alminshawi.desc': 'تطبيق قرآني مميز لتلاوات الشيخ محمد صديق المنشاوي، يتميز بجودة صوت عالية ودعم الاستماع بدون إنترنت.',
+            'apps.privacypolicy': 'سياسة الخصوصية'
         }
     };
 
