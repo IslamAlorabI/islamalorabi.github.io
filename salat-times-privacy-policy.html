@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Salat Times مواقيت الصلاة</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+    <style>
+        body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #0366d6;
+            text-decoration: none;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #0d1117;
+            }
+        }
+    </style>
+</head>
+<body class="markdown-body">
+    <a href="/" class="back-link">← Back to Portfolio</a>
+    <div id="content">
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+    <script>
+        const markdownContent = `# Privacy Policy
+
+**Last updated:** May 3, 2026
+
+## Introduction
+
+This Privacy Policy describes how the **Salat Times مواقيت الصلاة** application ("the App") handles user information. The App is developed by **Islam AlorabI** and is available on the Google Play Store.
+
+We are committed to protecting your privacy. The App is designed to operate with minimal data usage and does not collect, store, or share any personal information with us or any third party.
+
+## Information We Collect
+
+**We do not collect any personal data.** The App does not require account creation, login, or any form of user registration.
+
+### Data Stored Locally on Your Device
+
+The App stores the following data **locally on your device only**. This data never leaves your device and is not accessible to us or any third party:
+
+- **App Preferences:** Language selection, theme mode (light/dark/system), calculation method, and notification settings.
+- **Prayer Times Data:** Cached prayer times fetched from the Aladhan API, stored locally for offline access.
+- **Location Data:** Your last known coordinates (latitude and longitude) used solely to calculate accurate prayer times for your location. This data is stored only on your device.
+- **Notification Preferences:** Your Adhan and notification configuration for each prayer time.
+- **Widget Settings:** Configuration for the home screen prayer times widget.
+
+## Internet Usage
+
+The App requires an internet connection for:
+
+- **Fetching Prayer Times:** The App sends your coordinates (latitude and longitude) to the [Aladhan API](https://aladhan.com/prayer-times-api) to retrieve accurate prayer times for your location. No personal identifiers are sent.
+- **Location Services:** The App uses Google Play Services to determine your device location for prayer time calculations.
+
+No personal data such as name, email, device ID, or any other identifiable information is transmitted over the internet.
+
+## Third-Party Services
+
+The App uses the following third-party services:
+
+| Service | Purpose | Privacy Policy |
+|---|---|---|
+| **Aladhan API** | Fetching prayer times based on coordinates | [aladhan.com](https://aladhan.com/privacy-policy) |
+| **Google Play Services (Location)** | Determining device location for prayer time accuracy | [Google Privacy Policy](https://policies.google.com/privacy) |
+
+The App does **not** use any:
+
+- Analytics or tracking tools
+- Advertising networks
+- Crash reporting services
+- Social media integrations
+- Cloud storage or remote databases
+
+## Permissions
+
+The App requests the following Android permissions:
+
+| Permission | Purpose |
+|---|---|
+| **Internet** | Required to fetch prayer times from the Aladhan API. |
+| **Access Fine Location** | Used to determine your precise location for accurate prayer times. |
+| **Access Coarse Location** | Used as a fallback to determine your approximate location. |
+| **Post Notifications** | Required to send prayer time notifications and Adhan alerts. |
+| **Receive Boot Completed** | Reschedules prayer alarms after device restart. |
+| **Schedule Exact Alarm / Use Exact Alarm** | Ensures prayer notifications are delivered at the exact prayer time. |
+| **Foreground Service** | Allows Adhan audio playback to continue in the background. |
+| **Vibrate** | Provides haptic feedback with prayer notifications. |
+
+## Location Data
+
+- Location data is used **solely** to calculate prayer times for your area.
+- Your coordinates are sent to the Aladhan API over HTTPS to fetch prayer times.
+- Location data is cached **locally on your device** and is never stored on any external server controlled by us.
+- You can revoke location permission at any time through your device settings. Without location access, you will need to set your location manually within the App.
+
+## Data Sharing
+
+We do **not** share, sell, trade, or transfer any user data to any third parties. Since no personal data is collected by us, there is nothing to share.
+
+## Data Security
+
+All app data is stored locally on your device using Android's standard storage mechanisms (Room database and DataStore preferences). Data is stored in the App's private internal storage directory, accessible only to the App itself.
+
+## Children's Privacy
+
+The App does not collect personal information from anyone, including children under the age of 13. The App is an Islamic prayer times utility and is suitable for all ages.
+
+## Data Deletion
+
+Since all data is stored locally on your device, you can delete it at any time by:
+
+- Clearing the app's cache and data from your device's Settings.
+- Uninstalling the App, which removes all associated data.
+
+## Changes to This Privacy Policy
+
+We may update this Privacy Policy from time to time. Any changes will be reflected by updating the "Last updated" date at the top of this document. We encourage you to review this Privacy Policy periodically.
+
+## Contact Us
+
+If you have any questions or concerns about this Privacy Policy, please contact us at:
+
+**Email:** islamalorabi04@gmail.com`;
+
+        document.getElementById('content').innerHTML = marked.parse(markdownContent);
+    </script>
+</body>
+</html>
